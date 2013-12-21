@@ -1,7 +1,7 @@
 docker-node
 ===========
 
-Dockerfile to build node -> Docker Index trusted builds
+Dockerfile to build node
 
 ```
 FROM ubuntu:12.04
