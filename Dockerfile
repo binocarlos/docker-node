@@ -1,9 +1,3 @@
-docker-node
-===========
-
-Dockerfile to build node -> Docker Index trusted builds
-
-```
 FROM ubuntu:12.04
 
 # Update package repository
@@ -18,4 +12,3 @@ RUN apt-get install -y rlwrap wget git curl software-properties-common python py
 RUN add-apt-repository -y ppa:chris-lea/node.js
 RUN apt-get update
 RUN apt-get install -y nodejs
-```
