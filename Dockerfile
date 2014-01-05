@@ -8,7 +8,7 @@ RUN apt-get upgrade -y
 # Required packages
 RUN apt-get install -y rlwrap wget git curl software-properties-common python python-software-properties g++ make
 
-# Init node.js
-RUN add-apt-repository -y ppa:chris-lea/node.js
-RUN apt-get update
-RUN apt-get install -y nodejs
+RUN wget -qO /usr/local/bin/nave https://raw.github.com/isaacs/nave/master/nave.sh
+RUN chmod a+x /usr/local/bin/nave
+
+RUN nave usemain 0.10.24
